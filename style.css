@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+header {
+    border-bottom: solid #e3e1e1 1px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+
+.container {
+    border-bottom: solid #e3e1e1 1px;
+    display: flex;
+    margin: 0 5%;
+    gap: 15px;
+}
+
+aside {
+    text-align: center;
+    flex: 1;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-right: solid #e3e1e1 1px;
+}
+
+span {
+    color: oklch(76.9% 0.188 70.08);
+}
+
+.description {
+    flex: 2;
+}
+
+.about{
+    border-bottom: solid #e3e1e1 1px;
+}
+
+.contact{
+    border-bottom: solid #e3e1e1 1px;
+}
+
+.mypic {
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.contact-list {
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+
+}
+
+.contact-list > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.instagram{
+    background-image: linear-gradient(135deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6); 
+}
+
+.linkedin{
+    background-image: linear-gradient(135deg, #4267B2, #1a3263);
+}
+
+.facebook{
+    background-image: linear-gradient(135deg, #1a3263, #4267B2);
+}
+.github{
+    background-image: linear-gradient(135deg, #2a2b2b, #303132);
+}
+
+.github-stats-container{
+    padding-bottom: 10px;
+}
+
+.github-stats{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    margin: 0 5%;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .container{
+        flex-direction: column;
+    }
+    aside{
+        flex-direction: row;
+        border-right:none;
+        border-bottom: solid #e3e1e1 1px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        flex-direction: column;
+
+    }
+    aside{
+        flex-direction: row;
+        border-right:none;
+        border-bottom: solid #e3e1e1 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        flex-direction: column;
+
+    }
+    aside{
+        flex-direction: row;
+        border-right:none;
+        border-bottom: solid #e3e1e1 1px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
