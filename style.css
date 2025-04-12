@@ -20,6 +20,8 @@ body.dark-mode {
     --highlight-color: oklch(86.9% 0.188 80.08);
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -32,8 +34,22 @@ body {
 header {
     border-bottom: solid var(--border-color) 1px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 5%;
+}
+
+header > button{
+    border: transparent;
+    background-color: transparent;
+}
+
+#icon{
+    border: solid var(--text-color) 1px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.2s ease, filter 0.5s ease; 
+    cursor: pointer;
 }
 
 .container {
@@ -70,7 +86,15 @@ span {
 .mypic {
     width: 12rem;
     border-radius: 50%;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+    transition: transform 0.2s ease, filter 0.5s ease; 
 }
+
+.mypic:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.7)); 
+}
+
 
 .contact-list {
     display: flex;
@@ -79,18 +103,18 @@ span {
     padding-bottom: 10px;
 }
 
-.contact-list>a {
+.contact-list > a {
     text-decoration: none;
     color: white;
     display: flex;
     gap: 10px;
     padding: 0 10px;
     border-radius: 5px;
+    transition: transform 0.2s ease, filter 0.5s ease; 
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.contact-list > a:hover {
+    transform: scale(1.03);
 }
 
 .instagram {
