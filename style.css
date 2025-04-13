@@ -16,7 +16,6 @@ body.dark-mode {
     --text-color: #f0f0f0;
     --border-color: #3a3a3a;
     --card-bg: #2a2a2a;
-
     --highlight-color: oklch(86.9% 0.188 80.08);
 }
 
@@ -139,6 +138,11 @@ span {
 .github-stats {
     display: flex;
     flex-wrap: wrap;
+}
+
+.github-stats img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
